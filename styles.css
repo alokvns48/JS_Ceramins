@@ -6,7 +6,7 @@ body{
 h1{
     display: inline-block;
     font-weight: 300;
-    margin: 0px 32px 0px 0px;
+    margin: 0 32px 0 0;
 }
 
 .links li{
@@ -30,7 +30,7 @@ h1{
 }
 
 .links ul{
-    padding: 0px;
+    padding: 0;
 }
 
 a.active{
@@ -58,7 +58,7 @@ a.active{
 
 .card h2{
     display: inline-block;
-    margin: 8px 0px 12px 0px;
+    margin: 8px 0 12px 0;
     font-weight: 300;
 }
 
@@ -78,7 +78,7 @@ a.active{
 }
 
 .contact p{
-    margin:0px ;
+    margin:0;
     font-size: 20px;
 }
 
@@ -91,4 +91,33 @@ a.active{
 
 img:hover{
     opacity: 0.9;
+}
+
+@media only screen and (max-width: 810px){
+    .card{
+        width: 100%;
+    }
+
+    .about{
+        margin: 100px 0 100px 100px;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .card{
+       padding: 0;
+    }
+
+    .gallery{
+        padding: 8px;
+    }
+
+    .about{
+        margin: 100px auto;
+        width: 60%;
+    }
+
+    .about h3{
+        font-size: 30px;
+    }
 }
